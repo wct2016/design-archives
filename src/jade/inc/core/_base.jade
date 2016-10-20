@@ -1,0 +1,30 @@
+doctype html
+html(xmlns:og="http://ogp.me/ns#", xmlns:fb='https://www.facebook.com/2008/fbml')
+  head
+    meta(charset='UTF-8')
+    block title
+    block meta
+      meta(name='description', content= page.top.description)
+      meta(name='keywords', content=keywords)
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(property='twitter:card', content='summary_large_image')
+      meta(property='twitter:site', content='@wctokyo')
+      //- meta(property='fb:app_id', content='')
+      meta(property='og:url', content= url.site)
+      meta(property='og:type', content='website')
+      meta(property='og:title', content= page.top.title)
+      meta(property='og:description', content= page.top.description)
+      meta(property='og:image', content= page.top.ogpimage)
+    block link
+      link(rel='icon', href='./favicon.png')
+      //- link(rel='shortcut icon', href='./favicon.ico')
+      //- link(rel='apple-touch-icon', href='./apple-touch-icon.png')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Caveat')
+      link(rel='stylesheet', href='./css/app.css')
+    block script
+  body(class=bodyClass)
+    block body
+    block scriptFooter
+      //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+      script(src="./js/bundle.js")

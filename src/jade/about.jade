@@ -1,0 +1,69 @@
+include inc/core/_config
+include inc/core/_mixins
+extends inc/core/_base
+block title
+  title= page.top.title
+block prepend meta
+  - var sitename = name
+  - var keywords = page.top.keywords
+  - var description = page.top.description
+  - var ogpimage = page.top.ogpimage
+  - var bodyClass = 'page'
+  - var pageTitleJa = 'このサイトについて'
+block append meta
+block body
+  .l-container
+    .l-container__bar(role='presentation')
+    .l-container__body(role='main')
+      include inc/layouts/_header
+      .l-main
+        article.l-article
+          header.l-article__header
+            h1.l-article__title ABOUT
+            .m-breadclumbs
+              ul.m-breadclumbs__list
+                li
+                  a(href='./', title='Back to Home')
+                    span.fa.fa-home
+                li
+                  span.fa.fa-angle-double-right.m-breadclumbs__arrow
+                li #{pageTitleJa}
+          .l-article__content
+            .s-content
+              p 
+                a(href='#{url.wct2015}', target='_blank') WordCamp Tokyo 2015
+                | のために制作された様々なデータを GitHub 上で公開し、多くの人と共有できるように GitHub リポジトリの一覧ページを作りました。
+              p
+                | GitHub リポジトリの一覧は 
+                a(href='#{url.github}', target='_blank') #{url.github} 
+                | にアクセスするとご覧いただけます。
+              h2 WordCamp
+              p オープンソース・ソフトウェアである WordPress は世界中のコミュニティによって支えられています。日本でも地域ごとにコミュニティがたくさんあり、WordPress の情報交換や勉強会が積極的に行われています。これらはボランティアメンバーによって運営されています。そのコミュニティの中でも WordCamp は、WordPress Foundation の公式な承認のもとに世界中で開かれている WordPress のイベントです。
+              h2 Credit
+              p この GitHub Page で公開している様々なデータは、WordCamp Tokyo 2015のデザインチームのメンバーによってデザインされました。
+              dl
+                dt Member
+                  dd
+                    a(href='https://twitter.com/jack_13_rocket', target='_blank') <チームリーダー> 嵩本康志
+                  dd
+                    a(href='http://miinedesign.jp/blog/', target='_blank') アカイケナツミーヌ
+                  dd
+                    a(href='http://image-make.com/', target='_blank') 濱野将
+                  dd
+                    a(href='https://www.facebook.com/ab.kazutoshi', target='_blank') 油和寿
+              h2 License
+              p GitHub 上で公開されているデザインデータは全て WordPress のライセンスである GPLv2 またはそれ以降のバージョンが適用されます。
+              dl
+                dt WordPress のライセンスについて
+                dd
+                  a(href='https://ja.wordpress.org/gpl/', _target='_blank') WordPress のライセンス – GNU General Public License –
+                dd
+                  a(href='https://wordpress.org/about/gpl/', _target='_blank') GNU General Public License
+            //- / .s-content
+          //- / .l-article__content
+        //- / .l-article
+      //- / .l-main
+      include inc/layouts/_footer
+    //- / .l-container__body
+  //- / .l-container
+block append scriptFooter

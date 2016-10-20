@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* l-article
+/* -------------------------------------------------------------- */
+.l-article {
+  &__header {
+    padding: vmin-calc(60px) 0;
+  }
+  &__title {
+    font-family: $fontSerif;
+    font-size: vmin-calc(42px);
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: vmin-calc(10px);
+    line-height: vmin-calc(42px);
+    @media #{$medium-up} {
+      margin-bottom: 10px;
+      font-size: 48px;
+      letter-spacing: 4px;
+      line-height: 49px;
+    }
+  }
+  &__content {
+    padding: vmin-calc(20px);
+    margin-bottom: vmin-calc(60px);
+    background-color: $colorTransWhite;
+  }
+}

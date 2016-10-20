@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* layout
+/* -------------------------------------------------------------- */
+
+/**
+ * l-container
+ */
+.l-container {
+  position: relative;
+  background-image: url($filePath + 'bg_wapuu.png');
+  background-size: vmin-calc(580px) auto;
+  background-position: vmin-calc(-160px) -20px;
+  background-repeat: no-repeat;
+  @media #{$medium-up} {
+    background-image: url($filePath + 'bg_wapuu_2x.png');
+    background-size: 1280px auto;
+    background-position: center -100px;
+  }
+  &__bar {
+    @media #{$small-only} {
+      display: none;
+    }
+    @media #{$medium-up} {
+      display: block;
+      position: fixed;
+      float: left;
+      width: 30px;
+      min-height: 100%;
+      height: 100vh;
+      background-color: #fff;
+      background-image: url($filePath + 'bg_leftbar.png');
+      background-repeat: repeat-y;
+    }
+  }
+  &__body {
+    @media #{$medium-up} {
+      margin-left: 30px;
+    }
+  }
+}
+
+/**
+ * l-main
+ */
+.l-main {
+  padding: 0 vmin-calc(15px);
+  @media #{$medium-up} {
+    width: 100%;
+    max-width: $contentWidth;
+    margin: 0 auto;
+  }
+  @media #{$large-up} {
+    padding: 0;
+  }
+}

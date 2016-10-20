@@ -1,0 +1,29 @@
+include inc/core/_config
+include inc/core/_mixins
+extends inc/core/_base
+block title
+  title= page.top.title
+block prepend meta
+  - var sitename = name
+  - var keywords = page.top.keywords
+  - var description = page.top.description
+  - var ogpimage = page.top.ogpimage
+  - var bodyClass = 'home'
+block append meta
+block body
+  .l-container
+    .l-container__bar(role='presentation')
+    .l-container__body(role='main')
+      include inc/layouts/_header
+      .l-main
+        .s-site-brand
+          h1.s-site-brand__title
+            img(src='./images/global/logo.svg')
+        
+        repos
+      // / .l-main
+
+      include inc/layouts/_footer
+    // / .l-container__body
+  // / .l-container
+block append scriptFooter

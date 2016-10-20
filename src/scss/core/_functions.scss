@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+//----------------------------------------------------------------------------
+// functions
+//----------------------------------------------------------------------------
+
+//
+// import once
+//
+$modules: () !default;
+
+@mixin exports($name) {
+  // Import from global scope
+  $modules: $modules !global;
+  // Check if a module is already on the list
+  $module_index: index($modules, $name);
+  @if (($module_index == null) or ($module_index == false)) {
+    $modules: append($modules, $name) !global;
+    @content;
+  }
+}
+
+//
+// Calculate vmin from px
+//
+@function vmin-calc($values, $base: $base-v-size) {
+  $vmin-values: ();
+  $count: length($values);
+
+  @if $count == 1 {
+    @return -zf-to-vw($values, $base);
+  }
+
+  @for $i from 1 through $count {
+    $vmin-values: append($vmin-values, -zf-to-vw(nth($values, $i), $base));
+  }
+
+  @return $vmin-values;
+}
+
+@function -zf-to-vw($value, $base) {
+  @if type-of($value) != 'number' {
+    @warn inspect($value) + ' was passed to vmin-calc(), which is not a number.';
+    @return $value;
+  }
+
+  @if unit($value) != 'vmin' {
+    $value: (strip-unit($value) / strip-unit($base) * 100) * 1vmin;
+  }
+
+  @return $value;
+}

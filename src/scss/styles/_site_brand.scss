@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* hero
+/* -------------------------------------------------------------- */
+.s-site-brand {
+  padding-top: vmin-calc(64px);
+  padding-bottom: vmin-calc(40px);
+  @media #{$medium-up} {
+    padding: 0;
+    padding-top: 128px;
+    padding-bottom: 146px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 36px;
+    line-height: 1;
+    @media #{$medium-up} {
+      margin-bottom: 0;
+    }
+    img {
+      width: vmin-calc(150px);
+      height: 79.26px;
+      @media #{$medium-up} {
+        width: 320px;
+        height: auto;
+      }
+    }
+  }
+}

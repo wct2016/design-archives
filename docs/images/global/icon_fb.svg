@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook icon</title>
+    <desc></desc>
+    <defs></defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="index" transform="translate(-25.000000, -266.000000)">
+            <g id="sns" transform="translate(25.000000, 266.000000)">
+                <g id="icon_fb">
+                    <circle id="path" cx="20" cy="20" r="20"></circle>
+                    <path d="M21.22692,17.44408 L21.22692,15.06562 L21.22692,14.90539 C21.22692,13.94989 21.42831,13.37218 22.67928,13.37218 C23.83911,13.37218 24.90192,13.37953 24.90192,13.37953 L24.98277,10.13377 C24.98277,10.13377 23.94348,10 22.53669,10 C19.06014,10 17.55045,12.14326 17.55045,14.47468 L17.55045,17.44408 L15,17.44408 L15,20.92063 L17.55045,20.92063 L17.55045,30.5799999 L21.22692,30.5799999 L21.22692,20.92063 L24.83577,20.92063 L25.00188,17.44408 L21.22692,17.44408 Z" id="path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

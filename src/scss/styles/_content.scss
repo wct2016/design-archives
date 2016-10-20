@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* s-content
+/* -------------------------------------------------------------- */
+.s-content {
+  color: $colorGray;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  @media #{$medium-up} {
+    font-size: 13px;
+  }
+  @media #{$medium-up} {
+    font-size: 14px;
+  }
+  // heading
+  h2, h3, h4, h5, h6 {
+    font-family: $fontSerif;
+    color: $colorDeepBlue;
+  }
+  h2 {
+    font-size: 24px;
+    @media #{$medium-up} {
+      font-size: 28px;
+    }
+    @media #{$medium-up} {
+      font-size: 32px;
+    }
+  }
+  // paragraph
+  p {
+    line-height: 20px;
+    @media #{$medium-up} {
+      line-height: 22px;
+    }
+    @media #{$medium-up} {
+      line-height: 24px;
+    }
+  }
+  // link
+  a {
+    color: lighten($colorBlue, 20%);
+  }
+  // difinition list
+  dl {
+    padding: 10px;
+    border: 1px solid #dedede;
+    dt {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid $colorGrayLight;
+      line-height: 1.2;
+    }
+    dd {
+      margin-left: 10px;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+// core files
+// ----------------------------------------------------------------------------
+@import 'core/config';
+@import 'core/functions';
+@import 'core/placeholder';
+@import 'core/mixins';
+@import 'core/sprite';
+@import 'core/default';
+
+// Foundation
+// ----------------------------------------------------------------------------
+@import 'core/settings';
+@import 'core/foundation';
+
+// fonts
+// ----------------------------------------------------------------------------
+@import 'core/fonts';
+@import 'core/font-awesome';
+
+// module
+// ----------------------------------------------------------------------------
+@import 'modules/*.*';
+
+// layout
+// ----------------------------------------------------------------------------
+@import 'layouts/*.*';
+
+// styles
+// ----------------------------------------------------------------------------
+@import 'styles/*.*';

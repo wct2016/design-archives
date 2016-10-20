@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* sns share
+/* -------------------------------------------------------------- */
+.m-breadclumbs {
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    li {
+      margin-right: 5px;
+      font-size: 12px;
+      line-height: 1;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__arrow {
+    color: $colorGray;
+  }
+}

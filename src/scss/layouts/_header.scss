@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* header
+/* -------------------------------------------------------------- */
+.l-header {
+  background-image: url($filePath + 'bg_topbar.png');
+  background-repeat: repeat-x;
+  background-size: auto 10px;
+  padding: 20px 15px 0 15px;
+  text-transform: uppercase;
+  @media #{$medium-up} {
+    background-size: auto 20px;
+    padding: 30px 10px 0 10px;
+  }
+  &__description {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding-right: 20px;
+    @media #{$medium-up} {
+      width: 100%;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+    }
+  }
+}

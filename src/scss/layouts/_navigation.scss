@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------- */
+/* navigation
+/* -------------------------------------------------------------- */
+.l-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  width: vmin-calc(345px);
+  background-color: #fff;
+  box-shadow: $boxShadow;
+  z-index: 100;
+  @media #{$medium-up} {
+    top: 60px;
+    width: 260px;
+  }
+  li {
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  &__list {
+    margin: 0;
+    padding-left: 0;
+    z-index: 100;
+    li {
+      border-bottom: 1px dashed $colorGrayLight;
+      a {
+        display: block;
+        height: $menuItemHeight;
+        padding: 18px 15px;
+        color: $colorBlack;
+        letter-spacing: 2px;
+        line-height: 1;
+        font-size: 14px;
+      }
+    }
+  }
+}
