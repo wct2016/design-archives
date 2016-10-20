@@ -1,7 +1,7 @@
 Design Archives
 ============
 
-Design Archives is GitHub repository list of the organization [WordCamp Tokyo 2015](https://2015.tokyo.wordcamp.org/).
+Design Archives is GitHub repository list of the organization [WordCamp Tokyo 2016](https://2016.tokyo.wordcamp.org/).
 
 ### Requires
 - [Node.js](https://nodejs.org/en/)
