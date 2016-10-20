@@ -11,12 +11,12 @@
   position: relative;
   background-image: url($filePath + 'bg_wapuu.png');
   background-size: vmin-calc(580px) auto;
-  background-position: vmin-calc(-160px) -20px;
+  background-position: vmin-calc(-120px) 40px;
   background-repeat: no-repeat;
   @media #{$medium-up} {
     background-image: url($filePath + 'bg_wapuu_2x.png');
     background-size: 1280px auto;
-    background-position: center -100px;
+    background-position: center 40px;
   }
   &__bar {
     @media #{$small-only} {
@@ -30,8 +30,6 @@
       min-height: 100%;
       height: 100vh;
       background-color: #fff;
-      background-image: url($filePath + 'bg_leftbar.png');
-      background-repeat: repeat-y;
     }
   }
   &__body {

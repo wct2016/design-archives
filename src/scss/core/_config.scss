@@ -5,14 +5,17 @@
 //----------------------------------------------------------------------------
 $colorBlue          : #334f7a;
 $colorDeepBlue      : #0b346e;
-$colorGold          : #c19534;
+$colorGold          : #C19534;
 $colorBlack         : #000;
 $colorGray          : #555;
 $colorGrayLight     : #ccc;
-$colorTransWhite    : rgba(255,255,255,.5);
+$colorTransWhite    : rgba(255,255,255,.7);
+$colorBrown         : #aa7a40;
+$colorBrownDark     : #78562e;
+$colorRed           : #dC2806;
 
-$colorBg            : #f0f1f2;
-$colorText          : $colorGray;
+$colorBg            : #FAF3EE;
+$colorText          : $colorBrownDark;
 $colorLink          : $colorBlue;
 $colorLinkHover     : lighten($colorLink, 15%);
 $colorSelection     : lighten($colorLink, 20%);

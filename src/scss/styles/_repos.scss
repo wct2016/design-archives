@@ -27,7 +27,7 @@
   &__message {
     position: relative;
     text-align: center;
-    color: $colorGray;
+    color: $colorBrown;
     &--loading {
       padding-top: 58px;
       &:before {
@@ -37,7 +37,7 @@
         left: 0;
         right: 0;
         margin: 0;
-        color: $colorGray;
+        color: $colorBrown;
         animation: fa-spin 2s infinite linear;
       }
     }
@@ -90,7 +90,7 @@
       z-index: 2;
       width: 100%;
       height: 100%;
-      background: rgba(11,52,110,.2); // same as $colorDeepBlue opacity 20%
+      background: rgba(170,122,64,.2); // same as $colorBrown opacity 20%
       transition: all ease .3s;
     }
     &:hover {
@@ -121,6 +121,7 @@
   }
   &__content {
     padding: 0 vmin-calc(10px) vmin-calc(22px) vmin-calc(10px);
+    color: $colorText;
     @media #{$medium-up} {
       padding: 0 20px 22px 20px;
     }
