@@ -14728,7 +14728,7 @@ module.exports = riot.tag2('repos', '<div class="s-repos"> <p if="{isLoading}" c
 
     self.isLoading = []
 
-    fetch('https://api.github.com/users/wct2015/repos')
+    fetch('https://api.github.com/users/wct2016/repos')
       .then(function (result) {
         return result.json()
       })
