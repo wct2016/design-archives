@@ -14756,7 +14756,7 @@ module.exports = riot.tag2('sns', '<div class="m-sns-share"> <ul class="m-sns-sh
     var self = this;
 
     self.current_url = encodeURIComponent(location.href)
-    self.text = 'WordCamp Tokyo 2015 Design Archives'
+    self.text = 'WordCamp Tokyo 2016 Design Archives'
     self.account = 'wctokyo'
 
     this.popupFb = function(e) {
