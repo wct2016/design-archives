@@ -12,12 +12,16 @@
       margin-right: 5px;
       font-size: 12px;
       line-height: 1;
+      color: $colorBrown;
       &:last-child {
         margin-right: 0;
+      }
+      a {
+        color: $colorBrown;
       }
     }
   }
   &__arrow {
-    color: $colorGray;
+    color: $colorBrown;
   }
 }

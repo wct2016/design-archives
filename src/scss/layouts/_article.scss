@@ -14,6 +14,7 @@
     margin-top: 0;
     margin-bottom: vmin-calc(10px);
     line-height: vmin-calc(42px);
+    color: $colorBrown;
     @media #{$medium-up} {
       margin-bottom: 10px;
       font-size: 48px;

@@ -4,7 +4,7 @@
 /* s-content
 /* -------------------------------------------------------------- */
 .s-content {
-  color: $colorGray;
+  color: $colorText;
   font-size: 12px;
   letter-spacing: 0.1px;
   @media #{$medium-up} {
@@ -16,7 +16,7 @@
   // heading
   h2, h3, h4, h5, h6 {
     font-family: $fontSerif;
-    color: $colorDeepBlue;
+    color: $colorBrown;
   }
   h2 {
     font-size: 24px;
@@ -39,16 +39,17 @@
   }
   // link
   a {
-    color: lighten($colorBlue, 20%);
+    color: lighten($colorText, 20%);
   }
   // difinition list
   dl {
     padding: 10px;
-    border: 1px solid #dedede;
+    border: 1px solid darken($colorBg, 5%);
+    border-radius: 6px;
     dt {
       display: inline-block;
       padding-bottom: 3px;
-      border-bottom: 1px solid $colorGrayLight;
+      border-bottom: 1px solid darken($colorBg, 5%);
       line-height: 1.2;
     }
     dd {
