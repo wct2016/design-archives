@@ -11,7 +11,7 @@
         <div class="s-repo">
           <a href="{ html_url }">
             <div class="s-repo__thumb">
-              <img src="./images/repos/img_{ name }.png" onerror="this.onerror = null; this.src = './images/repos/img_noimage.png';">
+              <img src="./images/repos/img_{ name.toLowerCase() }.png" onerror="this.onerror = null; this.src = './images/repos/img_noimage.png';">
             </div>
             <div class="s-repo__content">
               <p class="s-repo__name">{ name }</p>
